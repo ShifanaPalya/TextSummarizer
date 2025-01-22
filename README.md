@@ -23,12 +23,12 @@ Steps to run the project in local:
 
 ### Snapshot of summary generated with option "Medium" being selected:
 
-![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_short_100.png?raw=true "Optional Title")
+![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_medium_100.png?raw=true "Optional Title")
 
 
 ### Snapshot of summary generated with option "Long" being selected:
 
-![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_short_300.png?raw=true "Optional Title")
+![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_long_300.png?raw=true "Optional Title")
 
 #### Future improvements in consideration:
 
