@@ -17,6 +17,6 @@ Steps to run the project in local:
 
 ### Snapshot of summary generated with option "Short" being selected:
 
-![Alt text](/blob/main/summary_long_300.png?raw=true "Optional Title")
+![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_short_50.png?raw=true "Optional Title")
 
 
