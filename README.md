@@ -1,5 +1,6 @@
 # TextSummarizer
-An AI powered text summarizer application to summarize long piece of text to user desired length summaries.
+An AI powered text summarizer application to summarize long piece of text to user desired length summaries and user preferred language.
+User can choose from English or French to get the summaries in their preferred language.
 3 modes are provided to the user to choose the length in which the summary is needed, which are:
 
 1. Short - Summarizes the input text in 50 words
@@ -15,19 +16,19 @@ Steps to run the project in local:
 3. Start the server by running the command "uvicorn app:app"
 4. Open another terminal and run the streamlit app with the command "streamlit run front_end.py"
 
-### Snapshot of summary generated with "Short" mode being selected:
+### Snapshot of summary generated with "Short" mode and language "French" being selected:
 
-![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_short_50.png?raw=true "Optional Title")
-
-
-### Snapshot of summary generated with "Medium" mode being selected:
-
-![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_medium_100.png?raw=true "Optional Title")
+![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_short_50_french.png?raw=true "Optional Title")
 
 
-### Snapshot of summary generated with "Long" mode being selected:
+### Snapshot of summary generated with "Medium" mode and language "English" being selected:
 
-![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_long_300.png?raw=true "Optional Title")
+![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_medium_100_eng.png?raw=true "Optional Title")
+
+
+### Snapshot of summary generated with "Long" mode and language "English" being selected:
+
+![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_long_300_eng.png?raw=true "Optional Title")
 
 #### Future improvements in consideration:
 
