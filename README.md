@@ -20,3 +20,16 @@ Steps to run the project in local:
 ![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_short_50.png?raw=true "Optional Title")
 
 
+
+### Snapshot of summary generated with option "Medium" being selected:
+
+![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_short_100.png?raw=true "Optional Title")
+
+
+### Snapshot of summary generated with option "Long" being selected:
+
+![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_short_300.png?raw=true "Optional Title")
+
+#### Future improvements in consideration:
+
+Implement a functionality to upload any kind of document(pdf, text, url) and generate summaries.
