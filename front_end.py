@@ -12,6 +12,7 @@ st.write("Enter a long piece of text and get a summary in seconds!")
 # User input
 text_input = st.text_area("Enter your text here:")
 summary_length = st.radio("Select Summary Length:", ["Short", "Medium", "Long"])
+language = st.radio("Select Language:", ["English", "French"])
 
 # Submit button
 if st.button("Summarize"):
@@ -19,7 +20,7 @@ if st.button("Summarize"):
         st.error("Please enter some text to summarize.")
     else:
         # API request
-        response = requests.post(API_URL, json={"text": text_input, "summary_length": summary_length.lower()})
+        response = requests.post(API_URL, json={"text": text_input, "summary_length": summary_length.lower(), "language": language})
         if response.status_code == 200:
             summary = response.json()["summary"]
             st.subheader("Summary:")

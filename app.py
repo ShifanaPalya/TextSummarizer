@@ -29,6 +29,7 @@ app = FastAPI(
 class SummarizationRequest(BaseModel):
     text: str
     summary_length: str  # "short", "medium", "long"
+    language: str # "English", "French"
 
 
 # Map summary length to word/character limits
@@ -55,6 +56,7 @@ async def summarize_text(request: SummarizationRequest):
     if not length_config:
         raise HTTPException(status_code=400, detail="Invalid summary length option.")
     
+    language = request.language
 
     #Split the text into chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=4000, chunk_overlap=100)
@@ -83,13 +85,13 @@ async def summarize_text(request: SummarizationRequest):
     #             """
 
     refine_prompt_template = """
-            Write a concise summary of the following text delimited by triple backquotes in exactly {length_config} number of words using bullet points.
+            Write a concise summary of the following text delimited by triple backquotes in {language} language in exactly {length_config} number of words using bullet points.
             Return your response in bullet points which covers the key points of the text.
             ```{text}```
             """
 
     refine_prompt = PromptTemplate(
-        template=refine_prompt_template, input_variables=["length_config","text"]
+        template=refine_prompt_template, input_variables=["language","length_config","text"]
     )
 
     #Load the summarization chain. Using refine chain type for better summarization.
@@ -105,7 +107,8 @@ async def summarize_text(request: SummarizationRequest):
 
         summary = refine_chain({
         'input_documents': chunks,
-        'length_config': length_config
+        'length_config': length_config,
+        'language': language
         })
 
         print("!!!!!Printing summary!!!!")
