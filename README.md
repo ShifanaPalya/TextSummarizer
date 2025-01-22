@@ -6,3 +6,13 @@ An AI powered text summarizer application to summarize long piece of text to use
 2. Medium - Summarizes the input text in 100 words
 3. Long - Summarizes the input text in 300 words
 
+This project is built using python 3.10.13 and Llama3-70B model is used for summarization through Groq API calls for faster inferencing. Backend of this project is implemented using FastAPI exposing the summarization tool as an API. Streamlit framework is used for an interactive UI.
+
+Steps to run the project in local:
+
+1. Create a virtual env with Python version 3.10.13
+2. Install requirements.txt
+3. Start the server by running the command "uvicorn app:app"
+4. Open another terminal and run the streamlit app with the command "streamlit run front_end.py"
+
+
