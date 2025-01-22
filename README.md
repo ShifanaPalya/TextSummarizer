@@ -16,6 +16,8 @@ Steps to run the project in local:
 3. Start the server by running the command "uvicorn app:app"
 4. Open another terminal and run the streamlit app with the command "streamlit run front_end.py"
 
+*Note:* Groq API key is mentioned in the .env file and calls to be made to the LLM models are limited. 
+
 ### Snapshot of summary generated with "Short" mode and language "French" being selected:
 
 ![Alt text](https://github.com/ShifanaPalya/TextSummarizer/blob/main/summary_short_50_french.png?raw=true "Optional Title")
